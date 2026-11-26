@@ -29,7 +29,6 @@ export const MAX_EVENT_BYTES = 6 * 1024 * 1024;
 export const MODEL_CATALOG = Object.freeze({
   "hy4-flash": { name: "Hunyuan 4 Flash", context: 1_000_000, output: 16_384, image: true },
   "hy4": { name: "Hunyuan 4", context: 1_000_000, output: 16_384, image: true },
-  "hy4-preview": { name: "Hunyuan 4 Preview", context: 1_000_000, output: 16_384, image: true },
   "hy3": { name: "Hunyuan 3", context: 262_144, output: 16_384, image: false },
   "deepseek-v4.1-flash": { name: "DeepSeek V4.1 Flash", context: 1_000_000, output: 16_384, image: true },
   "deepseek-v4.1-flash-1017": { name: "DeepSeek V4.1 Flash 1017", context: 1_000_000, output: 16_384, image: true },

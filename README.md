@@ -53,7 +53,7 @@ aiProxy 云函数（你的环境，无 Key，用环境身份调用 SDK）
 ### 2. 生成本地配置
 
 ```bash
-cd ~/Research/Scratch/cloudbase-bridge-local
+cd ~/Interests/projects/cloudbase-bridge-local
 node bin/cloudbase-bridge.mjs init --env-id cloud1-xxxxxxxxxxxx
 ```
 

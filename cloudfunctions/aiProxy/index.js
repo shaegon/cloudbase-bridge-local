@@ -72,11 +72,14 @@
  * environment, 2026-11; not in the official notice) and the unverified
  * `hy4`. CloudBase itself rejects unsupported ids with
  * AI_MODEL_NOT_SUPPORTED. Override with the AI_PROXY_ALLOWED_MODELS env var
- * (comma-separated). */
+ * (comma-separated).
+ *
+ * `hy4-preview` was removed on 2026-11-26: the platform notice
+ * (公告「关于 Hy4 preview 模型下线的通知」) retires it at 2026-12-07 00:00
+ * Beijing time, and it already answers 402 today. */
 const DEFAULT_ALLOWED_MODELS = [
   "hy4-flash",
   "hy4",
-  "hy4-preview",
   "hy3",
   "deepseek-v4.1-flash",
   "deepseek-v4.1-flash-1017",

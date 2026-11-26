@@ -8,7 +8,6 @@
   "models": [
     "hy4-flash",
     "hy4",
-    "hy4-preview",
     "hy3",
     "deepseek-v4.1-flash",
     "deepseek-v4.1-flash-1017"

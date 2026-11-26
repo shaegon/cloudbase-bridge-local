@@ -11,7 +11,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/node %h/Research/Scratch/cloudbase-bridge-local/bin/cloudbase-bridge.mjs serve
+ExecStart=/usr/bin/node %h/Interests/projects/cloudbase-bridge-local/bin/cloudbase-bridge.mjs serve
 Environment=CLOUDBASE_BRIDGE_CONFIG=%h/.config/cloudbase-bridge/config.json
 Restart=on-failure
 RestartSec=2

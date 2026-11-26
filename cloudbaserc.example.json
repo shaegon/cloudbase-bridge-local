@@ -10,7 +10,7 @@
       "runtime": "Nodejs18.15",
       "installDependency": true,
       "envVariables": {
-        "AI_PROXY_ALLOWED_MODELS": "hy4-flash,hy4,hy4-preview,hy3,deepseek-v4.1-flash,deepseek-v4.1-flash-1017",
+        "AI_PROXY_ALLOWED_MODELS": "hy4-flash,hy4,hy3,deepseek-v4.1-flash,deepseek-v4.1-flash-1017",
         "AI_PROXY_ALLOW_REMOTE_IMAGES": "false"
       },
       "triggers": []
