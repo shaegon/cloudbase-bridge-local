@@ -1,0 +1,13 @@
+This project vendors code from:
+
+  DaBinBinah/cloudbase-bridge
+  https://github.com/DaBinBinah/cloudbase-bridge
+  commit 67fc4da3 (aiProxy 1.3.0)
+  MIT License, Copyright (c) 2026 DaBinBinah
+
+Vendored file:
+  cloudfunctions/aiProxy/index.js
+
+Local modifications to that file are documented at its top and in
+cloudfunctions/aiProxy/README.md. The surrounding local gateway, CLI, tests
+and documentation are original work released under the MIT License.

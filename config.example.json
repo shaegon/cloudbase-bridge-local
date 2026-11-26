@@ -1,0 +1,26 @@
+{
+  "envId": "cloud1-xxxxxxxxxxxx",
+  "functionName": "aiProxy",
+  "region": "cn",
+  "port": 8788,
+  "localToken": "CHANGE_ME",
+  "apiKeyFile": "/home/YOU/.config/cloudbase-bridge/api-key",
+  "models": [
+    "hy4-flash",
+    "hy4",
+    "hy4-preview",
+    "hy3",
+    "deepseek-v4.1-flash",
+    "deepseek-v4.1-flash-1017"
+  ],
+  "maxOutputTokens": 16384,
+  "allowRemoteImages": false,
+  "extraParams": {
+    "hy4": {
+      "when": { "maxTokensAtMost": 4096 },
+      "params": { "thinking": { "type": "disabled" } }
+    }
+  },
+  "maxConcurrent": 4,
+  "upstreamTimeoutMs": 150000
+}

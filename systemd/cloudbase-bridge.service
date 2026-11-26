@@ -1,0 +1,34 @@
+# ~/.config/systemd/user/cloudbase-bridge.service
+# Adjust ExecStart if node or the checkout lives elsewhere.
+#
+# Hardening note: on this desktop's restricted user manager,
+# ProtectKernelModules=yes and ProtectClock=yes fail at spawn time with
+# status=218/CAPABILITIES. They are intentionally omitted; the remaining
+# options below were verified with `systemd-run --user` on this host.
+[Unit]
+Description=CloudBase Bridge local OpenAI-compatible gateway
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node %h/Research/Scratch/cloudbase-bridge-local/bin/cloudbase-bridge.mjs serve
+Environment=CLOUDBASE_BRIDGE_CONFIG=%h/.config/cloudbase-bridge/config.json
+Restart=on-failure
+RestartSec=2
+UMask=0077
+MemoryMax=256M
+TasksMax=64
+
+# Sandboxing verified on this host.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6
+RestrictSUIDSGID=yes
+LockPersonality=yes
+
+[Install]
+WantedBy=default.target
